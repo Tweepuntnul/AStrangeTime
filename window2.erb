@@ -1,0 +1,28 @@
+<h1>How we - <a href="https://www.facebook.com/daan.smith.10?ref=tn_tnmn">Daan Smith</a> & <a href="https://www.facebook.com/anneclaire.verheul?fref=ts">Anne-Claire van Keulen</a> - worked.. </h1>
+<p><b> A strange time web building</b><br>
+<b>Materials :</b><br>
+David Black, The Well Grounded Rubyist<br>
+Darren Jones, Jump Start Sinatra <br>
+Stackoverflow <br>
+Github <br>
+Heroku <br>
+Imgur <br>
+<br>
+<b>Problems:</b>
+<br>
+<p> We had a problem linking an image from our computer (to certain .erb files), thus we created a collage and uploaded this to www.imgur.com to create a hosting URL that we could link to in our HTML. Therefore we had all our images collected from one website and Imgur is a relaible platform to host your images on. </p>
+<p> It was difficult to create a background in an .erb file and to let this repeat in a specific section. The image appeared in all the webpages or did not repeat. We found out (via Stackoverflow) that in doors.erb we had to create a body Id that then we could specify in styles.scss by referring to this with #Door.</p>
+<p> Additionally it was difficult to convert the base.rb file with the styles.scss layout file. Also, in our main.rb it was hard to refer to the base.rb (algorithm) and resolved this by creating a class and summoning Doors.new in the main.rb.</p> 
+<p>To make the page more user friendly we wanted to connect an image to the sample ACCESS or DENIED output. For this we downloaded and installed a gem called RMagick 6.8.1, this gem allows images to be added in ruby code. <br>
+This didn't work so we added a if and elsif category in the main.rb file to the different sample outcomes. Therefore different layouts (.erb) are possible within the main.rb section. Thus images were connected to the outcome of the base.rb algorithm.</p>
+
+<p>
+Heroku and Github convergence. Downloading both Github and Heroku on the computer, the SSH key was not compatable. Thus, committing the master file and branches weren't possible and neither easily done within the terminal. The first problem occured after the following command line: 'git push heroku master'.</p>
+
+<p><b>Limitations:</b><br>
+Not a broad knowledge of code. <br>
+Heroku was introduced brand new in a late stage of the project. <br>
+We had not touched in depth upon, the compatibility of Github and Heroku. <br>
+
+<p><b>Weird things:</b><br>
+When performing ruby main.rb to test localhost4567 in the terminal, the answer found througyh the algorithm is given in the terminal in addition to on the webpage. Unknown explanation. </p>
