@@ -1,0 +1,64 @@
+$green: #00CC00;
+$black: #444;
+$white: #fff;
+$main-font: Helvetica, Calibri, sans-serif;
+
+body {
+font-family: $main-font;
+}
+
+h1 {
+  color: $black;
+	font: 30px/1 $main-font;
+}
+
+header h1 {
+	font-size: 40px;
+	line-height: 70px;
+	background: transparent url(http://i.imgur.com/bOozvJM.jpg) 0 0 repeat;
+	padding-left: 50px;
+}
+
+@mixin tabs ($background: blue, $color: yellow) {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		background: $background;
+		overflow: hidden;
+	}
+	li {
+		float: left;
+	}
+	a {
+		text-decoration: none;
+		display: block;
+		padding: 20px;
+		background: $background;
+		color: $color;
+		&:hover {
+			background: darken($background, 20%);
+		}
+	}
+}
+
+nav {
+	@include tabs ($background: $black, $color: $white);
+	font-weight: bold;
+}
+
+#Door {
+	background-image: url("http://i.imgur.com/sRA1YlN.jpg");
+	background-repeat: repeat-x;
+ 	background-position: 50px 320px;
+}
+
+#Window {
+	background-image: url("http://i.imgur.com/POMv88B.jpg");
+	background-repeat: repeat-x;
+ 	background-position: 50px 320px;
+}
+
+p {
+	font: 13px/1.4 $main-font;
+}
